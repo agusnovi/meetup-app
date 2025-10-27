@@ -1,8 +1,12 @@
+import { useLoaderData } from "react-router-dom"
+
 import PlaceList from "../components/PlaceList"
 
 export default function Places() {
+  const list = useLoaderData();
+  
     return (
-        <PlaceList />
+      <PlaceList list={list} />
     );
 }
 

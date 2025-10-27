@@ -74,3 +74,20 @@ nav svg {
         display: none;
     }
 }
+
+.withBadge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.withBadge > p {
+    color: white;
+    font-size: 22px;
+    background-color: blue;
+        width: 30px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
