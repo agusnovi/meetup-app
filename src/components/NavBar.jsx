@@ -1,4 +1,3 @@
-import cx from 'classnames';
 import { Link } from 'react-router-dom';
 import { useState, useContext } from 'react';
 
@@ -25,7 +24,7 @@ export default function NavBar() {
         <li className={styles.hideOnMobile}>
           <Link to="/add-new">Add New Meetup</Link>
         </li>
-        <li className={cx(styles.withBadge, styles.hideOnMobile)}>
+        <li className={styles.hideOnMobile}>
           <Link to="/favorite">My Favorites</Link>
           {hasFavorite && <p className={styles.badge}>{ctx.total}</p>}
         </li>
@@ -64,7 +63,7 @@ export default function NavBar() {
           <li>
             <Link to="/add-new">Add New Meetup</Link>
           </li>
-          <li className={styles.withBadge}>
+          <li>
             <Link to="/favorite">My Favorites</Link>
             {hasFavorite && <p className={styles.badge}>{ctx.total}</p>}
           </li>
